@@ -1,0 +1,132 @@
+/*Wrapper*/
+
+* {
+    box-sizing: border-box
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+/*Navbar section*/
+
+.navbar-brand img {
+    height: 100%;
+}
+/*center image section*/
+
+.center-image {
+    width: 100%;
+}
+.center-image img {
+    width: 100%;
+    margin: 0 auto;
+}
+/* Featured Work Section*/
+
+.showcase-header {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+.featured-work {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.project-article {
+    width: 32%;
+    text-align: center;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.project-article img {
+    width: 100%;
+    height: auto;
+}
+/*Contact Section*/
+
+#get-in-touch {
+    display: block;
+    margin-top: 50px;
+}
+.contact {
+    width: 100%;
+    margin-top: 100px;
+}
+.contact p {
+    font-size: 40px;
+    text-align: center;
+    color: #7d97ad;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#git {
+    padding: 20px;
+}
+#tweet {
+    padding: 20px;
+}
+@media screen and (max-width: 500px) {
+    .project-article {
+        box-shadow: 5px 5px 5px #ccc;
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+    .featured-work {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+/*For mobile*/
+
+@media screen and (max-width: 480px) {
+    h4 {
+        font-size: 1.3em;
+    }
+    .project-article {
+        box-shadow: 5px 5px 5px #ccc;
+        width: 100%;
+        margin-bottom: .8em;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    .project-article a {
+        font-size: 1em;
+    }
+    .featured-work {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+/*for ipad*/
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    h4 {
+        font-size: 1.5em;
+    }
+    .project-article {
+        margin-bottom: 1em;
+        margin: 4px;
+        box-shadow: 2px 5px 2px #ccc;
+        width: 48%;
+        flex-wrap: wrap;
+    }
+    .featured-work {
+        padding-right: 0px;
+    }
+    .featured-work :first-child {
+        margin-left: 0px;
+    }
+    .featured-work article:last-child {
+        margin-right: 0px;
+    }
+    .project-article a {
+        font-size: .8em;
+    }
+}
