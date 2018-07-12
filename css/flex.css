@@ -30,7 +30,6 @@
 }
 .featured-work {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
 }
 .project-article {
@@ -46,11 +45,10 @@
 
 #get-in-touch {
     display: block;
-    margin-top: 50px;
 }
 .contact {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .contact p {
     font-size: 40px;
